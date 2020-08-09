@@ -13,7 +13,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Meeting {
-	
+
 	private int Id;
 	private String meetingTitle;
 	private String meetingNotes;
