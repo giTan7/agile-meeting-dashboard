@@ -1,0 +1,18 @@
+app:
+  name: meeting-dashboard
+  token:
+    header: authtoken
+    expires_in: 300 # 5 minutes
+    secret: alanturing
+server:  port: 8080
+  servlet:    context-path: /api
+spring:
+  jpa:
+    hibernate:
+      # possible values: validate | update | create | create-drop
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost/myDatabase
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
