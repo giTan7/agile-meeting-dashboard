@@ -12,6 +12,7 @@
 	<groupId>com.meeting</groupId>
 	<artifactId>agile-meeting-dashboard</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>agile-meeting-dashboard</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -53,6 +54,17 @@
 			<artifactId>lombok</artifactId>
 			<scope>provided</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -68,6 +80,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>meetingservice</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -76,5 +89,4 @@
 		</plugins>
 	</build>
 
-	<packaging>war</packaging>
 </project>
