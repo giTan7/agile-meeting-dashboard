@@ -85,7 +85,6 @@ public class UserServiceImpl implements UserService {
 		return "User Deleted";
 	}
 
-
 	@RequestMapping(value = "/change-password", method = RequestMethod.POST)
 	@PreAuthorize("hasRole('USER')")
 	public ResponseEntity<?> changePassword(@RequestBody PasswordChanger passwordChanger) {
