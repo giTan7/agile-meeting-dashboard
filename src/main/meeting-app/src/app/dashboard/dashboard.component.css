@@ -1,0 +1,31 @@
+.region-page {
+    flex-direction: column;
+}
+.full-size {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.project-header {
+    position: relative;
+}
+.flex-noshrink {
+    flex-shrink: 0;
+}
+.me-control-div.commandbar-item {
+    position: static;
+    align-items: stretch;
+    width: 56px;
+}
+.me-control-div #me-control-container {
+    position: absolute;
+    z-index: 10;
+}
